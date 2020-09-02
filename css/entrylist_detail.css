@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+/*===============================
+背景
+================================*/
+/* #canvas{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+} */
+
+#canvas {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index: -1;
+        }
+
+#wrrap  {
+        position:absolute;
+        top:0;
+        left:0;
+        }
+
+/*===============================
+応募者詳細
+================================*/
+
+body {
+  width: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px -6px #00000073;
+  table-layout: fixed;
+  width: 80%;
+    /* width: 1100px; */
+}
+
+table tr {
+  background-color: #fff;
+}
+
+table th,
+table td {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  /* border-left:  1px solid #eee; */
+  text-align: center;
+  font-size: 15px;
+}
+table td {
+  border-left:  1px solid #eee;
+  text-align: left;
+    padding: 10px;
+}
+
+table  th {
+  width: 30%;
+  padding: 10px 0;
+  font-size: 14px;
+  padding: 15px;
+  /* background-color: #FFC107; */
+    background-color: #4A54A4;
+  color:#fff;
+}
+
+table tr{
+  text-align: center;
+  width: 20%;
+  padding: 20px 0;
+  background-color: #fff;
+  color:#3a3a3a;
+}
+
+/* table tr:hover{
+  background-color: #d4faff;
+} */
+
+
+
+/*===============================
+もどると削除
+================================*/
+
+.btns{
+  display: flex;
+  margin: 20px 0;
+}
+/* 戻るボタン */
+#yellow_btn{
+  width: 10%;
+    text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Meiryo","メイリオ";
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 20px auto;
+   cursor: pointer;
+  background-color: #e0a800;
+  border:none;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+#yellow_btn:hover {
+  color: #fff;
+  background:  #FFC107;
+  border:#fff;
+}
+
+/* 削除ボタン */
+#red_btn{
+  width: 10%;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Meiryo","メイリオ";
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 20px auto;
+   cursor: pointer;
+  background-color: #cc0627;
+  border:none;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+#red_btn:hover {
+  color: #fff;
+  background: #ff0831;
+  border:#fff;
+}

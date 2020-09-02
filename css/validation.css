@@ -1,0 +1,8 @@
+.error_required{
+  color: red;
+}
+
+.error_name , .error_tel,
+.error_pass , .error_mail ,.error_huri,.error_enname{
+  color: red;
+}

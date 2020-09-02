@@ -1,0 +1,247 @@
+
+/* header{
+	margin: 10%;
+} */
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,400);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+
+.login{
+    /* position: absolute;
+    top: calc(77% - 75px);
+    left: calc(44% - 50px); */
+    /* height: 150px;*//*ログイン機能つけるとなんかうまくいかん */
+		height: 200px;
+		width: 290px; /*初期値350*/
+    padding: 20px; /*初期値10*/
+		margin: 0 auto;
+    z-index: 2;
+}
+
+.login input[type=text]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #797979;
+    border-radius: 2px;
+    color: black;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+}
+
+.login input[type=password]{
+    width: 250px;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #797979;
+    border-radius: 2px;
+    color: black;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+}
+
+.login input[type=submit]{
+    width: 250px;
+    height: 35px;
+    background: #797979;
+    border: 1px solid #797979;
+    cursor: pointer;
+    border-radius: 2px;
+    color: #fff; /*login文字色*/
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+}
+
+.login input[type=submit]:hover{
+    opacity: 0.8;
+}
+
+.login input[type=submit]:active{
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus{
+    outline: none;
+    border: 1px solid #797979;
+}
+
+.login input[type=password]:focus{
+    outline: none;
+    border: 1px solid #797979;
+}
+
+.login input[type=submit]:focus{
+    outline: none;
+}
+
+::-webkit-input-placeholder{
+   color: #797979;
+}
+
+::-moz-input-placeholder{
+   color: #797979;
+}
+
+
+
+/*===============================
+タイトル
+================================*/
+.toptitle{
+	font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	line-height: 20px;
+	margin: 0 auto;
+	padding: 20px;
+
+}
+
+/*===============================
+背景
+================================*/
+#particles-js{
+	z-index: -999;
+}
+
+
+/*===============================
+ろご
+================================*/
+.imgtop{
+	margin: 0 auto;
+}
+
+
+/* DBエラー時 */
+.login .error{
+	color:red;
+}
+
+
+/*===============================
+loading画面
+================================*/
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background: #414da3;
+    animation: bgAnime 1s linear 1.8s forwards;
+		/* z-index: 1; */
+}
+
+.text {
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Pacifico', cursive;
+    color: #fff;
+    height: 1em;
+    line-height: 1.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 7;
+    opacity: 0;
+    animation: textAnime1 .5s linear forwards;
+}
+
+.text span{
+    display: inline-block;
+}
+
+.text span:nth-child(1){
+    animation: textAnime2 .6s ease-in-out .3s forwards;
+}
+
+.text span:nth-child(2){
+    animation: textAnime2 .6s ease-in-out .4s forwards;
+}
+
+.text span:nth-child(3){
+    animation: textAnime2 .6s ease-in-out .5s forwards;
+}
+
+.text span:nth-child(4){
+    animation: textAnime2 .6s ease-in-out .6s forwards;
+}
+.text span:nth-child(5){
+    animation: textAnime2 .6s ease-in-out .7s forwards;
+}
+.text span:nth-child(6){
+    animation: textAnime2 .6s ease-in-out .8s forwards;
+}
+.text span:nth-child(7){
+    animation: textAnime2 .6s ease-in-out .6s forwards;
+}
+.text span:nth-child(8){
+    animation: textAnime2 .6s ease-in-out .5s forwards;
+}
+.text span:nth-child(9){
+    animation: textAnime2 .6s ease-in-out .4s forwards;
+}
+.text span:nth-child(10){
+    animation: textAnime2 .6s ease-in-out .3s forwards;
+}
+
+/*keyframe*/
+@keyframes textAnime1{
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}
+
+@keyframes textAnime2 {
+0% {
+    transform: translateY(0);
+}
+25%{
+    transform: translateY(-30%);
+}
+75% {
+    transform: translateY(30%);
+}
+100%{
+    transform: translateY(0);
+}
+}
+
+@keyframes bgAnime{
+0%{
+    opacity: 1;
+}
+99%{
+    opacity: 0;
+}
+100%{
+    opacity: 0;
+    display: none;
+}
+}
+
+/* ローディング画面をつけた影響でつけたwrap */
+.wrap{
+	position: absolute;
+	top: 20%;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+	/* z-index: -1; */
+}

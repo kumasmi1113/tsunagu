@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+}
+
+/*===============================
+背景
+================================*/
+/* #canvas{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+} */
+
+#canvas {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index: -1;
+        }
+
+#wrrap  {
+        position:absolute;
+        top:0;
+        left:0;
+        }
+
+  /*===============================
+  サブタイトル
+  ================================*/
+  .subtitle p{
+    text-align: center;
+    font-size: 20px;
+    font-family: "メイリオ", "Meiryo", sans-serif;
+    /* font-weight: bold; */
+    color: red;
+    padding-top: 10px;
+  }
+
+/*===============================
+topへ
+================================*/
+
+#submit_btn{
+  width: 10%;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Meiryo","メイリオ";
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 20px auto;
+   cursor: pointer;
+  background-color: #e0a800;
+  border:none;
+  border-radius: 0.5rem;
+}
+
+#submit_btn:hover {
+  color: #fff;
+  background:  #FFC107;
+  border:#fff;
+}
+
+/*===============================
+応募者一覧へ
+================================*/
+
+#entrylist_btn{
+  width:10%;
+  text-align: center;
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-family: "Meiryo","メイリオ";
+  font-weight: bold;
+  padding: 5px 20px;
+  margin: 20px auto;
+   cursor: pointer;
+  background-color: #e0a800;
+  border:none;
+  border-radius: 0.5rem;
+}
+
+#entrylist_btn:hover {
+  color: #fff;
+  background:  #FFC107;
+  border:#fff;
+}
+
+/*===============================
+完了いたしましたの下の分
+================================*/
+h2 {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.text{
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}

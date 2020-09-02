@@ -1,0 +1,288 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* min-height: 100%; */
+  width: 100%;
+}
+/*===============================
+背景
+================================*/
+#canvas {
+        position:fixed;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        z-index: -1;
+        }
+
+#wrrap  {
+        position:absolute;
+        top:0;
+        left:0;
+        }
+
+
+
+/* ヘッダー */
+
+
+/* コンテンツ */
+.contents_area {
+  width: 700px;
+  overflow: auto; /* スクロールする範囲を制御 */
+  margin: 0 auto;
+  padding: 150px 0 150px; /* コンテンツ上下にスペース */
+}
+
+.content_block {
+  padding: 300px 10px;
+  border: 1px solid #CCC;
+}
+
+/* フッター */
+.footer_area {
+  position: fixed; /* 固定 */
+  bottom: 0; /* 一番下に表示 */
+  width: 100%; /* 中央に表示 */
+}
+
+.footer_block {
+  background: #FDDC80;
+}
+
+.footer_box {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.footer_box p {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 34px;
+  text-align: center;
+}
+
+/* IE6 */
+html,
+body {
+  _height: 100%;
+  _overflow: hidden;
+}
+
+.header_area,
+.footer_area {
+  _position: absolute;
+}
+
+.header_block,
+.footer_block {
+  _margin-right: 17px; /* IE6のスクロールバーの幅分のスペース */
+}
+
+.contents_wrap {
+  _width: 100%;
+  _height: 100%;
+  _overflow: auto;
+}
+
+
+body {
+  width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 15px -6px #00000073;
+  table-layout: fixed;
+  width: 90%;
+    /* width: 1100px; */
+}
+
+table tr {
+  background-color: #fff;
+}
+
+table th,
+table td {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+  /* border-left:  1px solid #eee; */
+  text-align: center;
+  font-size: 12px;
+}
+table td {
+  border-left:  1px solid #eee;
+}
+
+table  th {
+  width: 20%;
+  padding: 10px 0;
+  font-size: 14px;
+  padding: 15px;
+  /* background-color: #FFC107; */
+    background-color: #4A54A4;
+  color:#fff;
+}
+
+table tr{
+  text-align: center;
+  width: 20%;
+  padding: 20px 0;
+  background-color: #fff;
+  color:#3a3a3a;
+}
+
+table tr:hover{
+  background-color: #d4faff;
+}
+
+
+
+/*===============================
+詳細ボタン
+================================*/
+
+/* 詳細ボタンクリック */
+.btn,
+a.btn,
+button.btn {
+  /* font-size: 1.6rem; */
+  font-weight: 700;
+  /* line-height: 1.5; */
+    line-height: 3;
+  position: relative;
+  display: inline-block;
+  /* padding: 1rem 4rem; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/* 黄色 */
+a.btn--yellow {
+  color: #000;
+  /* background-color: #fff100; */
+  /* border-bottom: 5px solid #ccc100; */
+  background-color:#FFC107;
+  border-bottom: 5px solid #bd910f;
+}
+
+/* 黄色ホバー */
+a.btn--yellow:hover {
+  margin-top: 3px;
+  color: #000;
+  /* background: #fff20a;
+  border-bottom: 2px solid #ccc100; */
+  background:#e0a800;
+  border-bottom: 2px solid #a17a0a;
+}
+
+
+/*****************************************************/
+
+.btns{
+  display: flex;
+  margin: 20px 0;
+
+}
+
+/* 削除ボタン */
+/* 赤色 */
+a.btn--red {
+  color: #fff;
+  /* background-color: #fff100; */
+  /* border-bottom: 5px solid #ccc100; */
+  background-color:#ff0831;
+  border-bottom: 5px solid #c2302a;
+}
+
+/* 赤色ホバー */
+a.btn--red:hover {
+  margin-top: 3px;
+  color: #fff;
+  /* background: #fff20a;
+  border-bottom: 2px solid #ccc100; */
+  background:#cc0627;
+  border-bottom: 2px solid #c2302a;
+}
+
+
+
+/*****************************************/
+
+
+/* 詳細ボタンクリック */
+.btn,
+input.btn,
+button.btn {
+  /* font-size: 1.6rem; */
+  font-weight: 700;
+  /* line-height: 1.5; */
+    line-height: 3;
+  position: relative;
+  display: inline-block;
+  /* padding: 1rem 4rem; */
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+input[type="submit"]{
+  border: none;
+}
+
+
+/* 削除ボタン */
+/* 赤色 */
+input.btn--red {
+  color: #fff;
+  /* background-color: #fff100; */
+  /* border-bottom: 5px solid #ccc100; */
+  background-color:#ff0831;
+  border-bottom: 5px solid #c2302a;
+}
+
+/* 赤色ホバー */
+input.btn--red:hover {
+  margin-top: 3px;
+  color: #fff;
+  /* background: #fff20a;
+  border-bottom: 2px solid #ccc100; */
+  background:#cc0627;
+  border-color: none;
+  border-bottom: 2px solid #c2302a;
+}
